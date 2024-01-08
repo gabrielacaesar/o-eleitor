@@ -258,6 +258,10 @@ MOBILE
         max-width: 900px !important;
     }
 
+    .vh-1-img {
+        background-image: url(img/etitulo-cropped.png)
+    }
+
     h1 {
     	font-size: 40px;
     }
