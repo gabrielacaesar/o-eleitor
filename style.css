@@ -259,15 +259,16 @@ MOBILE
     }
 
     .vh-1-img {
-        background-image: url(img/etitulo-cropped.png)
+        background-image: none !important;
+        background-color: #004F2D;
     }
 
     h1 {
-    	font-size: 40px;
+    	font-size: 45px;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .column-2 > p {
