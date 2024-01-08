@@ -4,6 +4,7 @@
 	font-family: 'Outfit', sans-serif;
 	box-sizing: border-box;
 	color: #202124;
+    max-width: 2500px;
 }
 
 body {
@@ -19,7 +20,6 @@ ul > li {
 }
 
 a {
-	text-decoration: none !important;
 	cursor: pointer;
 }
 
@@ -37,7 +37,7 @@ a {
 }
 
 .vh-1-img{
-    background-image: url(img/teste-1.png);
+    background-image: url(img/titulo-eleitor.png);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -71,6 +71,10 @@ a {
     justify-content: center;
 }
 
+header > a {
+    text-decoration: none !important;
+}
+
 h1 {
     color: whitesmoke;
     font-size: 130px;
@@ -97,7 +101,6 @@ h2, .column-2 > p {
 .green-line {
     background-color: whitesmoke;
     height: 10px;
-    width: 100%;
     margin-top: 5px;
     margin-left: 11%;
 }
@@ -141,6 +144,7 @@ header > a > div:hover {
     background-color: #004F2D;
     justify-content: center;
     flex-direction: column;
+    padding: 20px 0px 100px 0px;
 }
 
 .video-embed > h3 {
@@ -152,9 +156,13 @@ header > a > div:hover {
 .video-embed > p {
     padding-top: 50px;
     color: whitesmoke;
-    text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0 30%;
+}
+
+.video-embed > p > a {
+    color: whitesmoke;
+    text-decoration: underline;
 }
 
 .video-embed > p.intro-social {
@@ -165,7 +173,7 @@ header > a > div:hover {
     text-align: center;
     color: whitesmoke;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 50px
 }
 
 .tiktok-embed {
@@ -174,7 +182,7 @@ header > a > div:hover {
 
 /* project */
 
-.project {
+.project, .about {
     flex-direction: column;
     background-color: #004F2D;
     justify-content: center;
@@ -195,6 +203,10 @@ header > a > div:hover {
     font-size: 25px;
 }
 
+.answer > a {
+    color: whitesmoke;
+}
+
 .answer:last-child {
     padding-bottom: 70px;
 }
@@ -213,3 +225,86 @@ header > a > div:hover {
     text-decoration: underline !important;
     font-weight: 400;
 }
+
+/* about */ 
+
+.about {
+    padding-top: 70px;
+}
+
+.about > img {
+    width: 250px;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.about > p.answer {
+    padding-top: 30px;
+}
+
+.form {
+    align-self: center;
+    padding-bottom: 70px;
+}
+
+
+
+/* 
+MOBILE 
+*/
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    * {
+        max-width: 900px !important;
+    }
+
+    h1 {
+    	font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .column-2 > p {
+        font-size: 15px;
+    }
+
+    .column-1, .column-2 {
+        width: 50%;
+    }
+
+    header > a {
+        padding-left: 20px;
+    }
+
+    header > a > div {
+        font-size: 20px;
+        width: 80px;
+    }
+
+    .question {
+        font-size: 22px;
+        padding-top: 40px;
+    }
+
+    .answer, .video-embed > p {
+        font-size: 18px;
+    }
+
+    .video-embed > p, .question, .answer {
+        margin: 0 15%;
+    }
+
+    .answer:last-child {
+        padding-bottom: 40px;
+    }
+
+    .google-maps, .tiktok-embed, .form {
+        width: 80% !important;
+    }
+
+    .about > img {
+        width: 180px;
+    }
+} 
